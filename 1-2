@@ -1,0 +1,26 @@
+#define _USE_MATH_DEFINES
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+/**
+* \brief вычисление расстояния между точками
+* \param const double point1 - значение 1 точки
+* \param const double point2 - значение 2 точки
+* \return - значение Distance
+*/
+double getDistance(const double point1, const double point2);
+
+int main() {
+  setlocale(LC_ALL, "Russian");
+  double point1 = 0.0;
+  double point2 = 0.0;
+  cout << "Введите 2 точки с пробелом: \n";
+  cin >> point1 >>point2;
+  const auto Distance = getDistance(point1, point2);
+  cout << "Tочка 1 = " << point1 << "\n Точка 2 = " <<point2 << "\n Pасстояние = " << Distance << endl;
+  return 0;
+}
+double getDistance(const double point1, const double point2) {return sqrt(point1 * point1 + point2 * point2); }

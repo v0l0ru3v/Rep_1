@@ -1,0 +1,42 @@
+#include <iostream>
+#include <locale>
+#include <string>
+
+using namespace std;
+
+/**
+* \brief замена переменных разными способами
+* \param double a - переменная, вводимая пользователем
+* \param double b - переменная, вводимая пользователем
+* \param double tmp - вспомогательная переменная
+* \return - заменённые переменные
+*/
+
+/**
+ * \brief Точка входа в программу
+ * \return 0  в случае успеха
+ */
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    double a = 0;
+    double b = 0;
+
+    std::cout << "Введите два значения: ";
+    std::cin >> a >> b;
+    std::cout << "1-й способ:" << std::endl;
+    std::cout << "Исходные значения: a = " << a << ", b = " << b << std::endl;
+    int tmp = a;
+    a = b;
+    b = tmp;
+    std::cout << "После замены: a = " << a << ", b = " << b << std::endl;
+    std::cout << "2-й способ:" << std::endl;
+    std::cout << "Исходные значения: a = " << a << ", b = " << b << std::endl;
+    a = a + b;
+    b = b - a;
+    b = -b;
+    a = a - b;
+    std::cout << "После замены: a = " << a << ", b = " << b << std::endl;
+
+    return 0;
+} 

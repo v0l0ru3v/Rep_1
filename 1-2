@@ -15,7 +15,6 @@ using namespace std;
 double getDistance(const double point1, const double point2);
 
 int main() {
-  setlocale(LC_ALL, "Russian");
   double point1 = 0.0;
   double point2 = 0.0;
   cout << "Введите 2 точки с пробелом: \n";

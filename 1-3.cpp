@@ -18,7 +18,7 @@ double getSurface(const double mass, const double area, const int g);
 */
 int main()
 {
-    const double g = 9.8;
+    const int g = 9.8;
     std::cout << "Введите массу плиты = ";
     double mass;
     std::cin >> mass;

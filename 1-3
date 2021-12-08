@@ -1,4 +1,3 @@
-#define USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
 #include <locale>
@@ -19,7 +18,7 @@ double getSurface(const double mass, const double area, const int g);
 */
 int main()
 {
-    const int g = 10;
+    const int g = 9.8;
     std::cout << "Введите массу плиты = ";
     double mass;
     std::cin >> mass;

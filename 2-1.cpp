@@ -9,7 +9,7 @@ using namespace std;
 */
 
 enum class MethodeChoice
-{	first = 1,second = 2 };
+{	first ,second };
 
 /**
  * \brief Точка входа в программу
@@ -21,7 +21,7 @@ int main() {
     std::cout << "Введите переменные a и b: ";
     std::cin >> a >> b;
     
-    std::cout << "Выберите способ замены значений(1-с использованием другой переменной,2-без использования)";
+    std::cout << "Выберите способ замены значений(0-с использованием другой переменной,1-без использования)";
     int methode;
     std::cin >> methode;
     const auto choice = static_cast<MethodeChoice>(methode);
